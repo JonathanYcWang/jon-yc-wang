@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Montserrat Extra Bold";
+    src: url("./Montserrat-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat Medium";
+    src: url("./Montserrat-Medium.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat Normal";
+    src: url("./Montserrat-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat Light";
+    src: url("./Montserrat-Light.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat Black";
+    src: url("./Montserrat-Black.ttf") format("truetype");
+
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat Bold";
+    src: url("./Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat Semibold";
+    src: url("./Montserrat-SemiBold.ttf") format("truetype");
+    font-style: normal;
+  }
+  
