@@ -9,11 +9,11 @@ export default function Header(props) {
       style={{ margin: "10vmin 0vmin 10vmin 0vmin" }}
     >
       <div class="row align-items-center justify-content-between">
-        <div class="col" style={{ margin: "0vmin 15vmin 0vmin 15vmin" }}>
+        <div class="col-5" style={{ margin: "0vmin 0vmin 0vmin 10vmin" }}>
           <Disappear style={{ width: "80%" }} src={Img} alt="hi" />
         </div>
 
-        <AboutMe style={{ margin: "0vmin 15vmin 0vmin 15vmin" }}>
+        <AboutMe>
           <HeaderTextGroup>
             <SubTitle>Welcome to my corner of the web</SubTitle>
             <h1>a bit about me.</h1>
@@ -43,13 +43,16 @@ const Disappear = styled.img`
 `
 
 const AboutMe = styled.div`
+
   @media only screen and (min-width: ${props => props.theme.screen.md}) {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin: 0vmin 10vmin 0vmin 5vmin;
   }
   @media only screen and (max-width: ${props => props.theme.screen.md}) {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
+    margin: 0vmin 10vmin 0vmin 20vmin;
   }
 `
 
@@ -58,11 +61,13 @@ const SubTitle = styled.h2`
 `
 
 const HeaderTextGroup = styled.div`
-
+  text-align: justify;
   opacity: 0.93;
   h1 {
-    color: ${props => props.theme.color.regular};
-    ${props => props.theme.font_size.xlarge};
+    color: ${props => props.theme.color.black.regular};
+    font-size: 3.5vw;
+    letter-spacing: 0.1vmin;
+    
   }
 
   h2 {
@@ -72,8 +77,9 @@ const HeaderTextGroup = styled.div`
   }
 
   p {
-    font-family: ${props => props.theme.font.normal};
-    ${props => props.theme.font_size.regular};
+    font-family: ${props => props.theme.font.medium};
+    font-size: 1vw;
+    line-height: 2.25vmin;
     color: ${props => props.theme.color.black.light};
   }
 `

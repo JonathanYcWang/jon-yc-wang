@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export default function Header(props) {
   return (
+
     <div style={{ margin: "40vmin 0vmin 3vmin 0vmin" }}>
       <HeaderTextGroup>
         <h2>Interested in working together?</h2>
@@ -12,7 +13,7 @@ export default function Header(props) {
             Jonw.wang@mail.utoronto.ca
           </a>
         </h1>
-        <p>THANKS FOR VISITING!</p>
+        <p style={{ margin: "5vmin 0vmin 5vmin 0vmin" }}>THANKS FOR VISITING!</p>
       </HeaderTextGroup>
     </div>
   )
@@ -22,7 +23,8 @@ const HeaderTextGroup = styled.div`
   h1 {
     color: ${props => props.theme.color.black.regular};
     font-family: ${props => props.theme.font.medium};
-    ${props => props.theme.font_size.xlarge};
+    font-size: 4vw;
+    letter-spacing: 0.3vmin;
     
   }
 
@@ -30,11 +32,12 @@ const HeaderTextGroup = styled.div`
     color: ${props => props.theme.color.accent};
     color: ${props => props.theme.color.semibold};
     font-family: ${props => props.theme.font.normal};
-    ${props => props.theme.font_size.larger};
+    font-size: 2vw;
   }
   p {
     padding-top: 3vmin;
     ${props => props.theme.font_size.regular};
     color: ${props => props.theme.color.accent};
+    font-family: ${props => props.theme.font.semibold};
   }
 `
